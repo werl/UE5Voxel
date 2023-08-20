@@ -1,0 +1,6 @@
+[submodule "Plugins/UEGitPlugin"]
+	path = Plugins/UEGitPlugin
+	url = https://github.com/SRombauts/UEGitPlugin.git
+[submodule "Plugins/UnrealCLR"]
+	path = Plugins/UnrealCLR
+	url = https://github.com/nxrighthere/UnrealCLR.git
