@@ -9,7 +9,7 @@ ABlock::ABlock()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	Mesh	= CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("Mesh"));
+	//Mesh	= CreateDefaultSubobject<UProceduralMeshComponent>(TEXT("Mesh"));
 	TArray<FVector> verts = { FVector(0.5, 0.5, 0.5), FVector(-0.5, 0.5, 0.5), FVector(-0.5, -0.5, 0.5), FVector(0.5, -0.5, 0.5), FVector(0.5, 0.5, -0.5), FVector(-0.5, 0.5, -0.5), FVector(-0.5, -0.5, -0.5), FVector(0.5, -0.5, -0.5) };
 	TArray<int32> tris = {
 		0,1,2,
@@ -30,7 +30,7 @@ ABlock::ABlock()
 		6,7,4,
 		4,5,6
 	};
-	Mesh->CreateMeshSection(0, verts, tris, const TArray<FVector>() , TArray<FVector2D>(), TArray<FLinearColor>(), TArray<FProcMeshTangent>(), true);
+	//Mesh->CreateMeshSection(0, verts, tris, const TArray<FVector>() , TArray<FVector2D>(), TArray<FLinearColor>(), TArray<FProcMeshTangent>(), true);
 }
 
 // Called when the game starts or when spawned
